@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css" type="text/css" </head>
+</head>
+
+<body>
+    <form method="POST" action="/registration">
+        {{>header}}
+        <div class="registerAccount">
+            <h3>Account Registration</h3>
+            <br>
+            <br>
+            <input type="email" name="acuserName" id="AcuserName" required placeholder="Email" value="">
+            <br>
+            <br>
+            <input type="password" name="acpassword" id="Acpassword" required placeholder="Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                value="">
+            <br>
+            <br>
+            <input type="password" name="confirmPassword" id="confirmpassword" required placeholder="Confirm Password"
+                value="">
+            <br>
+            <br>
+            <button id="register" type="submit" value="submit">Register</button>
+            <br>
+
+            <label id="messageCon" name="message">{{data}}</label>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

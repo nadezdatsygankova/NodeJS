@@ -1,0 +1,181 @@
+body {
+    background-color: #66CCCC;
+    background-size: cover;
+    color: #006666;
+    font: 1.25em italic, arial;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    border: 3px solid rgb#336666;
+}
+
+.loginDiv
+{
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    border: 3px solid rgb#336666;
+  
+}
+
+.registerAccount
+{
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    border: 3px solid rgb#336666;
+  
+}
+
+
+.registerAccount input
+{
+    width: 250px;
+    height: 25px;
+}
+
+
+ .loginDiv input
+{
+    width: 250px;
+    height: 25px;
+}
+
+
+.description {
+    border: 3px solid rgb#336666;
+	height: 6vh;
+	left: 0;
+	margin: 2em auto;
+	padding: 1vh;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 72vh;
+    width: 65vh;
+    border-radius: 2%;
+}
+
+input[type=radio] {
+    margin: 0.5rem;
+}
+
+
+
+.boxImg {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:200px;
+    border-radius: 2%;
+}
+
+.radioB {
+    padding: 15px;
+    border: 3px solid #006666;
+    left: 100px;
+    margin:0;
+    position: absolute;
+    text-align: left;
+    top:10vh;
+    width:15%;
+    border-radius: 2%;
+
+}
+
+#boxImg {
+    width: 300px;
+    height: 400px;
+    left:0;
+    margin: 0 auto;
+    position: absolute; 
+    right: 0;
+    border: 3px solid #006666;
+    border-radius: 2%;
+}
+
+#imageLit
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+button {
+    background-color: rgb(135, 187, 187);
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    border: 3px solid #006666;
+    
+}
+#buttonK
+{
+    background-color: rgb(135, 187, 187);
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    border: 3px solid #006666;
+    
+}
+#select
+{
+    background-color: rgb(135, 187, 187);
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    border: 3px solid #006666;
+    
+}
+.logout
+{
+    text-align:right;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 3px solid rgb#336666;
+    position: relative;
+}
+
+a, #username
+{
+   transition: opacity 0.5s linear;
+}
+
+#username
+{
+    position: absolute;
+    right: 100px;
+    top:50px;
+
+}
+
+#logoutPlace
+{
+    color:white;
+    position: absolute;
+    right: 200px;
+    top:50px;
+    opacity: 0;
+}
+
+.logout:hover #username
+{
+    opacity: 0;
+}
+
+.logout:hover #logoutPlace
+{
+    opacity: 1;
+}
+/*.logout :hover #boxUsername
+{
+    opacity: 0;
+}*/

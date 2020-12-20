@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css" type="text/css" </head>
+</head>
+
+<body>
+    <form method="POST" action="/purchase">
+        {{>header}}
+        <section class="boxImg" name="pursh">
+
+            <img src="/images/{{data.current}}" alt=" NO IMAGE" class="imageLit" height="100px" width="100px">
+            <p>{{data.descriptionCurrent}}</p>
+            <p>{{data.priceCurrent}}</p>
+            <input type="submit" name="buy" value="Buy" id="buttonK"></input>
+            <button type="button" onclick="myFunction()">Cancel</button>
+        </section>
+
+    </form>
+
+</body>
+<script>
+    function myFunction() {
+        alert('Maybe next time!');
+        window.location = '/gallery';
+    }
+</script>
+
+</html>

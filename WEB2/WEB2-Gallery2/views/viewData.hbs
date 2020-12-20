@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css" type="text/css" </head>
+</head>
+
+<body>
+    <form method="POST" action="/gallery">
+        <h1>Photo's Nadezda Tsygankova</h1>
+        <aside class="radioB">
+            {{#each data.name}}
+            <input type="radio" name="rdoImage" id={{this}} value={{this}}>
+            <label for={{this}}>{{this}}</label>
+            <br>
+            {{/each}}
+            <br>
+            <br>
+            <button type="submit" value="submit">Submit</button>
+        </aside>
+
+        <section class="boxImg">
+            {{#if data.current }}
+            <img src="/images/{{data.current}}.jpg" alt=" NO IMAGE" class="image">
+            {{else}}
+            <img src="/images/Nature.jpg" alt=" NO IMAGE" class="image">
+            {{/if}}
+        </section>
+        <div class="description">
+            {{#if data.current }}
+            <h3>{{data.current}}</h3>
+            {{else}}
+            <h3>Nature</h3>
+            {{/if}}
+        </div>
+        <div class="logout">
+            <div id="boxUsername">{{data.email}}</div>
+            <div id="boxLogout">
+                <a id="logoutPlace" onclick="submitLogout();">Logout</a>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

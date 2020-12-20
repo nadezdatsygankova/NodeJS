@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css" type="text/css" </head>
+</head>
+
+<body>
+    <form method="POST" action="/gallery">
+        {{>header}}
+        <aside class="radioB">
+            <select name="selection" id="select">
+                <option value="Nature.jpg"></option>
+                {{#each data.name}}
+                <option value={{this}}>{{this}}</option>
+                {{/each}}
+            </select>
+            <br>
+            <br>
+            <button type="submit" value="submit">Submit</button>
+        </aside>
+
+        <section class="boxImg">
+            {{#if data.current }}
+            <a href="purchase"><img src="/images/{{data.current}}" alt=" NO IMAGE" class="image"></a>
+            {{else}}
+            <img src="/images/Nature.jpg" alt=" NO IMAGE" class="image">
+            {{/if}}
+        </section>
+        <div class="description">
+            {{#if data.current }}
+            <h3>{{data.current}}</h3>
+            {{else}}
+            <h3>Nature</h3>
+            {{/if}}
+        </div>
+        <div class="logout">
+            <div id="username">{{data.email}}</div>
+            <a id="logoutPlace" href="/logout">Logout</a>
+        </div>
+    </form>
+</body>
+
+</html>

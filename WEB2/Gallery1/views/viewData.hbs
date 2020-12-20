@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css" type="text/css" </head>
+</head>
+
+<body>
+    <form method="POST" action="http://127.0.0.1:3000">
+        <h1>Nadezda Tsygankova</h1>
+        <aside class="radioB">
+            {{#each data.name}}
+            <input type="radio" name="rdoImage" id={{this}} value={{this}}>
+            <label for={{this}}>{{this}}</label>
+            <br>
+            {{/each}}
+            <br>
+            <br>
+            <button type="submit" value="submit">Submit</button>
+        </aside>
+    </form>
+    <section class="boxImg">
+        <img src="/images/{{data.current}}.jpg" alt=" NO IMAGE" class="image">
+    </section>
+    <div class="description">
+        <h3>{{data.current}}</h3>
+    </div>
+
+
+</body>
+
+</html>
