@@ -1,7 +1,4 @@
 //Author Nadezda Tsygankova
-//Assignment 3
-//WEB322
-/*for close DB -path -/closeDB   */
 
 
 const HTML_PORT = process.env.PORT || 3000;
