@@ -1,6 +1,5 @@
 //Author Nadezda Tsygankova
-//Assignment 2
-//WEB322
+
 
 
 const HTML_PORT = process.env.PORT || 3000;
