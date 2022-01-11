@@ -25,8 +25,7 @@ let rawData = fs.readFileSync("./user.json");
 
 
 let user = JSON.parse(rawData); // red a file and created a object
-//console.log(user);
-//console.log(user["george.tsang@senecacollege.ca"]);
+
 
 
 app.set("views", path.join(__dirname, "views"));
